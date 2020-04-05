@@ -1,0 +1,313 @@
+/*全体的な設定*/
+html{
+    height:100%;
+}
+
+body{
+    margin:0;
+    height: 100%;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    color: black;
+    text-decoration:none;
+}
+
+.container{
+    width:1024px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+.message-wrapper,.price-wrapper,.profile-wrapper{
+    background-color: #eeeeee;
+}
+
+.btn{
+    color: white;
+    background-color: #e65100;
+    border-radius:4px;
+}
+
+.heading{
+    margin: 60px 0;
+}
+
+.heading h1{
+    margin-bottom: 0;
+}
+
+.heading h3{
+    margin-top: 0;
+}
+
+.clear{
+    clear:left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th,td{
+    border: solid 1px;
+}
+
+th{
+    font-weight: normal;
+    background-color: #FFECB3;
+    width: 25%;
+}
+
+td{
+    background-color: white;
+    width: 75%;
+}
+
+td span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*ヘッダーのCSS*/
+header{
+    height: 65px;
+    border-bottom:3px solid  #efa336;
+}
+
+/*ヘッダー左*/
+.header-left{
+    float:left;
+}
+
+.header-left span{
+    color: #e65100;
+}
+
+.h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.h6{
+    font-size:12px;
+}
+
+/*ヘッダー右*/
+.header-right{
+    float: right;
+}
+
+.header-right li{
+    float: left;
+}
+
+.header-right a{   
+    padding:20px 20px;
+    line-height: 25px;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*top-wrapperのCSS*/
+.top-wrapper{
+    text-align:center;
+    background: repeating-linear-gradient(45deg,#FFECB3 0,#FFECB3 15px,#FFFFCD 15px,#FFFFCD 30px);
+}
+
+.top-message,.top-elements{
+    padding-top:50px;
+}
+
+.top-feature{
+    float:left;
+}
+/*-----------------------------------------------*/
+.weight-txt{
+    font-size:20px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------*/
+.u-yellow{
+    background: linear-gradient(transparent 50%,yellow 50%);
+}
+
+.top-feature li{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+}
+
+.fa-check{
+    color: FFECB3;
+}
+
+.coconala{
+    text-align: right;
+}
+
+.tococonala{
+    text-decoration: underline;
+}
+
+.consul{
+    margin-top: 50px;
+    padding: 10px 80px;
+    border-radius:10px;
+}
+
+.consul p{
+    font-size: 20px;
+    float: left;
+}
+
+.caret{
+    float: none;
+    display: inline-block;
+    text-align:right
+}
+
+
+/*-----------------------------------------------*/
+.balloon-txt {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+  }
+  
+.balloon-txt:before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-top: 12px solid #FFF;
+    z-index: 2;
+  }
+  
+.balloon-txt:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #555;
+    z-index: 1;
+  }
+  
+.balloon-txt p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*skill-wrapperのCSS*/
+.skill-wrapper{
+    text-align:center;
+}
+
+/*-----------------------------------------------*/
+.skills{
+    margin-bottom: 100px;
+}
+
+.skill{
+    float:left;
+    width: calc(100%/3);
+}
+
+.web{
+    border-bottom:solid 3px #E44D26;
+}
+
+.wordpress{
+    border-bottom:solid 3px #0073AA;
+}
+
+.responsive{
+    border-bottom:solid 3px #FFD966;
+}
+
+.skill-icon{
+    margin:50px 0;
+}
+
+.skill-txt{
+    width: 90%;
+    display:inline-block;
+}
+
+.skill-txt p{
+    text-align: left;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*message-wrapperのCSS*/
+.message-wrapper{
+    text-align: center;
+}
+
+.messages{
+    margin-bottom:100px;
+}
+
+.message{
+    width:50%;
+    float:left;
+    
+}
+
+.message p{
+    width: 90%;
+    text-align: left;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*portfolio-wrapperのCSS*/
+.portfolio-wrapper{
+    text-align: center;
+}
+
+.portfolio-wrapper img{
+    margin-bottom: 20px;
+}

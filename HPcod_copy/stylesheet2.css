@@ -1,0 +1,107 @@
+/*price-wrapperのCSS*/
+.price-wrapper{
+    text-align: center;
+}
+
+.price-table p{
+    text-align: left;
+}
+
+.pricetable th,td{
+    padding:10px 15px;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*concept-wrapperのCSS*/
+.concept-wrapper{
+    text-align: center;
+}
+
+.concept-txt{
+    width:45%;
+    text-align: left;
+    margin:0 auto;
+    margin-bottom: 60px;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*profile-wrapperのCSS*/
+.profile-wrapper{
+    text-align: center;
+}
+
+.profile-table{
+    width:80%;
+    float: left;
+}
+
+.profile-table th,td{
+    padding:5px 15px;
+}
+
+.profile-contents{
+    margin-bottom: 60px;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*promise-wrapperのCSS*/
+.promise-wrapper{
+    text-align: center;
+}
+
+.num-icon{
+    float: left;
+}
+
+.circle{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background: #EFA336;
+    text-align: center;
+    line-height:80px;
+    color: white;
+    font-size: 40px;
+    margin-right: 25px;
+}
+
+.promise-message{
+    text-align: left;
+}
+
+.promise-head{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*contact-wrapperのCSS*/
+.contact-wrapper{
+    text-align: center;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*footerのCSS*/
+footer{
+    text-align: center;
+}
+
+

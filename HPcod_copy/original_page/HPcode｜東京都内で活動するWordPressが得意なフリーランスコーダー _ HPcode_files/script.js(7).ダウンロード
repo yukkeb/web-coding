@@ -1,0 +1,67 @@
+/* wow */
+var wow = new WOW().init();
+
+/* Swiper */
+var swiper = new Swiper(".swiper-container", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  loop: true,
+  autoplay: true,
+  autoplay: {
+    delay: 3000,
+    stopOnLast: false,
+    disableOnInteraction: true
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function(index, className) {
+      return (
+        '<span class="' +
+        className +
+        '">' +
+        '<img src="https://haniwaman.com/wp-content/themes/haniwaman/lp/img/portfolio' +
+        (index + 1) +
+        '.png" alt="">' +
+        "</span>"
+      );
+    }
+  },
+  effect: "fade"
+});
+
+/* PROFILE */
+jQuery(".profile-img").hover(function() {
+  if (jQuery(this).hasClass("m_human")) {
+    jQuery(".profile-table.m_haniwa")
+      .fadeOut(300)
+      .css("display", "none");
+    jQuery(".profile-table.m_human")
+      .fadeIn(300)
+      .css("display", "table");
+    jQuery(".profile-img.m_haniwa").removeClass("m_show");
+    jQuery(".profile-img.m_human").addClass("m_show");
+  } else if (jQuery(this).hasClass("m_haniwa")) {
+    jQuery(".profile-table.m_haniwa")
+      .fadeIn(300)
+      .css("display", "table");
+    jQuery(".profile-table.m_human")
+      .fadeOut(300)
+      .css("display", "none");
+    jQuery(".profile-img.m_haniwa").addClass("m_show");
+    jQuery(".profile-img.m_human").removeClass("m_show");
+  }
+});
+
+/* Drawer */
+jQuery("#drawer-content a").on("click", function() {
+  jQuery("#drawer-check").prop("checked", false);
+});
+
+/* LOAD */
+jQuery(window).on("load", function() {
+  jQuery(".load").hide();
+  jQuery(".header").addClass("m_loaded");
+});

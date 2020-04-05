@@ -1,0 +1,18 @@
+/* Clipboard */
+var codeClipboard = new ClipboardJS( '.code-copy' );
+codeClipboard.on( 'success', function( e ) {
+	jQuery( e.trigger ).before( '<span class="copy-success">コピーしました</span>' );
+	jQuery( '.copy-success' ).fadeIn( 500 );
+	jQuery( '.copy-success' ).fadeOut( 1000 );
+});
+
+/* Gifffer */
+jQuery( window ).on( 'load', function() {
+	Gifffer();
+});
+
+/* Highlight */
+hljs.initHighlightingOnLoad();
+hljs.configure({
+	tabReplace: '  '
+});
