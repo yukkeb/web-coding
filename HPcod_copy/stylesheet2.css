@@ -1,15 +1,101 @@
+/*skill-wrapperのCSS*/
+.skill-wrapper{
+    text-align:center;
+}
+
+/*-----------------------------------------------*/
+.skills{
+    margin-bottom: 150px;
+}
+
+.skill{
+    float:left;
+    width: calc(100%/3);
+}
+
+.web{
+    border-bottom:solid 3px #E44D26;
+}
+
+.wordpress{
+    border-bottom:solid 3px #0073AA;
+}
+
+.responsive{
+    border-bottom:solid 3px #FFD966;
+}
+
+.skill-icon{
+    margin:50px 0;
+}
+
+.skill-txt{
+    width: 90%;
+    display:inline-block;
+}
+
+.skill-txt p{
+    text-align: left;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*message-wrapperのCSS*/
+.message-wrapper{
+    text-align: center;
+}
+
+.messages{
+    margin-bottom:130px;
+}
+
+.message{
+    width:50%;
+    float:left;
+    
+}
+
+.message p{
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*portfolio-wrapperのCSS*/
+.portfolio-wrapper{
+    text-align: center;
+}
+
+.portfolio-wrapper img{
+    margin-bottom: 80px;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
 /*price-wrapperのCSS*/
 .price-wrapper{
     text-align: center;
+}
+
+.price-table{
+    margin-bottom: 80px;
 }
 
 .price-table p{
     text-align: left;
 }
 
-.pricetable th,td{
-    padding:10px 15px;
-}
 
 
 /*-----------------------------------------------*/
@@ -21,12 +107,16 @@
 }
 
 .concept-txt{
-    width:45%;
+    width:47%;
     text-align: left;
     margin:0 auto;
-    margin-bottom: 60px;
+    padding-bottom: 80px;
 }
 
+.concept-txt p{
+    line-height: 2em;
+    padding-bottom: 25px;
+}
 
 
 /*-----------------------------------------------*/
@@ -42,12 +132,58 @@
     float: left;
 }
 
-.profile-table th,td{
-    padding:5px 15px;
+
+
+.profile-table th{
+    width:30%;
+}
+
+.profile-table td{
+    width: 70%;
 }
 
 .profile-contents{
     margin-bottom: 60px;
+}
+
+/*-----------------------------------------------*/
+
+.profile-right{
+    float: left;
+}
+
+.profile-icons{
+    position: relative;
+    top:25px;
+    left: 25px;
+}
+
+.profile-circle{
+    width: 140px;
+    height:140px;
+    border-radius: 50%;
+    background: white;
+    line-height:80px;
+    color: white;
+    font-size: 40px;
+    margin-right: 25px;
+}
+
+.profile-circle img{
+    position: relative;
+    top: 15px;
+}
+
+.profile-icon{
+    margin:20px auto;
+}
+
+.profile-icon fab{
+    font-size: 3em;
+}
+
+.fa-twitter{
+    color: #1B95E0;
 }
 
 
@@ -64,7 +200,7 @@
     float: left;
 }
 
-.circle{
+.num-circle{
     width: 80px;
     height:80px;
     border-radius: 50%;
@@ -80,11 +216,26 @@
     text-align: left;
 }
 
-.promise-head{
-    font-size: 24px;
-    font-weight: bold;
+.promise-message h3{
+    margin-bottom: 0;
 }
 
+.promise-message p{
+    margin-top: 0;
+}
+
+.output{
+    position: relative;
+    left: 100px;
+}
+
+.output a{
+    margin-right:15px;
+}
+
+.promises{
+    padding-bottom:120px;
+}
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
@@ -92,9 +243,30 @@
 /*contact-wrapperのCSS*/
 .contact-wrapper{
     text-align: center;
+    background-color: #EFA336;
 }
 
+.contact-form p{
+    margin:0;
+}
 
+input,textarea{
+    width: 30%;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    appearance: default;
+}
+
+.contact-submit{
+    color: white;
+    background-color: #E65100;
+}
+
+.contact-form{
+    padding-bottom: 80px;
+}
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
@@ -102,6 +274,9 @@
 /*footerのCSS*/
 footer{
     text-align: center;
+    background-color: #666666;
+    color: white;
+    margin-top: auto;
 }
 
 

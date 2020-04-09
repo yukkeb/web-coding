@@ -1,4 +1,9 @@
 /*全体的な設定*/
+*{
+    padding:0;
+    margin: 0;
+}
+
 html{
     height:100%;
 }
@@ -6,6 +11,12 @@ html{
 body{
     margin:0;
     height: 100%;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 button{
@@ -58,21 +69,22 @@ table{
     border-collapse: collapse;
     width: 100%;
     text-align: left;
-}
-
-th,td{
-    border: solid 1px;
+    border-color: #cccccc;
 }
 
 th{
     font-weight: normal;
     background-color: #FFECB3;
     width: 25%;
+    border: solid 1px #CCBD8F;
+    padding:10px 15px;
 }
 
 td{
     background-color: white;
     width: 75%;
+    border: solid 1px #cccccc;
+    padding: 10px 15px;
 }
 
 td span{
@@ -85,30 +97,47 @@ td span{
 /*-----------------------------------------------*/
 /*ヘッダーのCSS*/
 header{
+    width: 100%;
     height: 65px;
-    border-bottom:3px solid  #efa336;
+    background-color: white;
+    border-bottom:2px solid  #efa336;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 2px gray;
 }
 
 /*ヘッダー左*/
 .header-left{
+    text-align: center;
     float:left;
+    height: 100%;
+    line-height: 1em;
+    margin-top: 20px;
 }
 
-.header-left span{
+.header-left a{
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow:1px 1px 3px #DFDFDF;
+}
+
+.header-left:hover{
+    opacity:0.5;
+}
+
+.logo-orange{
     color: #e65100;
 }
 
-.h3{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.h6{
+.yomi{
     font-size:12px;
 }
 
+
 /*ヘッダー右*/
 .header-right{
+    margin-top:20px;
     float: right;
 }
 
@@ -116,11 +145,19 @@ header{
     float: left;
 }
 
-.header-right a{   
-    padding:20px 20px;
-    line-height: 25px;
+.header-right li:hover{
+    opacity: 0.5;
 }
 
+header li a{   
+    padding:23px;
+    margin-right: 2px;
+}
+
+.head-consul{
+    padding:10px 15px;
+    margin-left: 3px;
+}
 
 
 /*-----------------------------------------------*/
@@ -132,13 +169,13 @@ header{
     background: repeating-linear-gradient(45deg,#FFECB3 0,#FFECB3 15px,#FFFFCD 15px,#FFFFCD 30px);
 }
 
-.top-message,.top-elements{
-    padding-top:50px;
+.top-message{
+    padding-top: 120px;
 }
 
-.top-feature{
-    float:left;
-}
+
+
+
 /*-----------------------------------------------*/
 .weight-txt{
     font-size:20px;
@@ -146,18 +183,33 @@ header{
 }
 
 /*-----------------------------------------------*/
+.top-elements{
+    display: table;
+    padding-bottom: 80px;
+}
+
 .u-yellow{
     background: linear-gradient(transparent 50%,yellow 50%);
 }
 
+.top-element1{
+    display:table-cell;
+    width: 70%;
+}
+
+.top-feature ul{
+    margin-top: 40px;
+}
+
 .top-feature li{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     text-align: left;
 }
 
 .fa-check{
-    color: FFECB3;
+    color: #EFA336;
+    font-size: 1.5em;
 }
 
 .coconala{
@@ -170,7 +222,7 @@ header{
 
 .consul{
     margin-top: 50px;
-    padding: 10px 80px;
+    padding: 30px 80px;
     border-radius:10px;
 }
 
@@ -180,25 +232,37 @@ header{
 }
 
 .caret{
-    float: none;
-    display: inline-block;
-    text-align:right
+    position: relative;
+    top: 20px;
+    left:70px;
 }
 
 
+
 /*-----------------------------------------------*/
+.top-element2{
+    display: table-cell;
+    width: 30%;
+}
+
+.top-coment{
+    position: relative;
+    top: 160px;
+}
+
 .balloon-txt {
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
-    padding: 7px 10px;
+    padding: 15px 10px;
     min-width: 120px;
-    max-width: 100%;
+    max-width: 85%;
     color: #555;
     font-size: 16px;
     background: #FFF;
-    border: solid 3px #555;
+    border: solid 2px #BDBDBD;
     box-sizing: border-box;
+    border-radius: 7px;
   }
   
 .balloon-txt:before {
@@ -219,95 +283,13 @@ header{
     left: 50%;
     margin-left: -17px;
     border: 14px solid transparent;
-    border-top: 14px solid #555;
+    border-top: 14px solid #BDBDBD;
     z-index: 1;
   }
   
 .balloon-txt p {
     margin: 0;
     padding: 0;
+    text-align: left;
   }
 
-
-
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*skill-wrapperのCSS*/
-.skill-wrapper{
-    text-align:center;
-}
-
-/*-----------------------------------------------*/
-.skills{
-    margin-bottom: 100px;
-}
-
-.skill{
-    float:left;
-    width: calc(100%/3);
-}
-
-.web{
-    border-bottom:solid 3px #E44D26;
-}
-
-.wordpress{
-    border-bottom:solid 3px #0073AA;
-}
-
-.responsive{
-    border-bottom:solid 3px #FFD966;
-}
-
-.skill-icon{
-    margin:50px 0;
-}
-
-.skill-txt{
-    width: 90%;
-    display:inline-block;
-}
-
-.skill-txt p{
-    text-align: left;
-}
-
-
-
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*message-wrapperのCSS*/
-.message-wrapper{
-    text-align: center;
-}
-
-.messages{
-    margin-bottom:100px;
-}
-
-.message{
-    width:50%;
-    float:left;
-    
-}
-
-.message p{
-    width: 90%;
-    text-align: left;
-}
-
-
-
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*-----------------------------------------------*/
-/*portfolio-wrapperのCSS*/
-.portfolio-wrapper{
-    text-align: center;
-}
-
-.portfolio-wrapper img{
-    margin-bottom: 20px;
-}
