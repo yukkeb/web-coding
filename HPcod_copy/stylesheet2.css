@@ -55,7 +55,10 @@
 .message{
     width:50%;
     float:left;
-    
+}
+
+.message h2{
+    margin-bottom: 20px;
 }
 
 .message p{
@@ -119,6 +122,7 @@
 }
 
 
+
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
@@ -175,15 +179,31 @@
 }
 
 .profile-icon{
-    margin:20px auto;
+    width:85%;
+    position: relative;
+    top:15px;
+    display:flex;
+    justify-content: space-around;
 }
 
-.profile-icon fab{
-    font-size: 3em;
+.profile-icon a{
+    display: inline-block;
+}
+
+.profile-icon .fab{
+    font-size: 1.5em;
 }
 
 .fa-twitter{
     color: #1B95E0;
+}
+
+.fa-facebook-f{
+    color: #3B5998;
+}
+
+.fa-github{
+    color: #4183C4;
 }
 
 
@@ -196,7 +216,12 @@
     text-align: center;
 }
 
+.promise{
+    margin-bottom:50px;
+}
+
 .num-icon{
+    display: table-cell;
     float: left;
 }
 
@@ -213,6 +238,7 @@
 }
 
 .promise-message{
+    display: table-cell;
     text-align: left;
 }
 
@@ -220,13 +246,9 @@
     margin-bottom: 0;
 }
 
-.promise-message p{
-    margin-top: 0;
-}
-
 .output{
     position: relative;
-    left: 100px;
+    right:230px;
 }
 
 .output a{
@@ -236,6 +258,12 @@
 .promises{
     padding-bottom:120px;
 }
+
+.promise-last{
+    margin-bottom:25px;
+}
+
+
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
@@ -247,26 +275,35 @@
 }
 
 .contact-form p{
-    margin:0;
+    line-height: 1em;
 }
 
 input,textarea{
     width: 30%;
     font-size: 16px;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
     appearance: default;
+    line-height: 1.5em;
+    border: none;
 }
 
 .contact-submit{
-    color: white;
-    background-color: #E65100;
+    width: 31%;
+    padding:20px 0;
+}
+
+.contact-submit:hover{
+    opacity:0.5;
+    cursor: pointer;
 }
 
 .contact-form{
     padding-bottom: 80px;
 }
+
+
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/

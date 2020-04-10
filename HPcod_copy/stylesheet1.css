@@ -39,6 +39,10 @@ a{
     margin:0 auto;
 }
 
+p{
+    line-height: 2em;
+}
+
 .message-wrapper,.price-wrapper,.profile-wrapper{
     background-color: #eeeeee;
 }
@@ -92,6 +96,8 @@ td span{
     font-weight: bold;
 }
 
+
+
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/
@@ -108,12 +114,15 @@ header{
 }
 
 /*ヘッダー左*/
-.header-left{
+.header-left {
     text-align: center;
     float:left;
     height: 100%;
-    line-height: 1em;
     margin-top: 20px;
+}
+
+.header-left p{
+    line-height: 0.5em;
 }
 
 .header-left a{
@@ -229,6 +238,7 @@ header li a{
 .consul p{
     font-size: 20px;
     float: left;
+    line-height: 1.5em;
 }
 
 .caret{
